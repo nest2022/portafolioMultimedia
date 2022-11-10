@@ -1,0 +1,368 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    background-color: white;
+}
+
+header {
+    display: flex;
+    height: 70px;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+    padding: 10px;
+}
+
+nav a {
+    font-weight: 600;
+    padding-right: 10px;
+
+}
+
+.pie {
+    clear: both;
+    text-align: center;
+    padding: 20px;
+    border-top: 2px solid #ffffff;
+    background-color: #252A2E;
+    color: #fff;
+    position: relative;
+    width: 100%;
+}
+
+table,
+td,
+th {
+    border: 1px solid black;
+    text-align: center;
+    padding: 0px;
+    width: 30px;
+}
+
+.formato-table {
+    font-family: 'Times New Roman', Times, serif;
+    border-collapse: collapse;
+    width: 50%;
+    color: black;
+    margin-left: 0px;
+    background-color: white;
+}
+
+.Redes {
+    margin-top: 75px;
+
+}
+
+.Redes2 {
+    margin-top: 50px;
+
+}
+
+.Redes3 {
+    margin-top: 75px;
+    margin-right: 20px;
+
+}
+
+
+.carousel-control.right,
+.carousel-control.left {
+    background-color: none;
+    color: #0761bc;
+}
+
+.carousel-indicators li {
+    border-color: cadetblue;
+}
+
+.carousel-indicators li.active {
+    background-color: #0761bc;
+}
+
+html {
+    /* desliza al hacer click en los menus */
+    scroll-behavior: smooth;
+}
+
+/* MENU */
+.contenido-encabezado {
+    background: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
+}
+/* titulo */
+.contenido-encabezado header .logo a {
+    font-family: 'Righteous';
+    font-size: 36px;
+    color: #0761bc;
+    text-decoration: none;
+}
+/* enlaces */
+.contenido-encabezado header ul {
+    display: flex;
+    list-style: none;
+}
+
+.contenido-encabezado header nav ul li a {
+    text-align: none;
+    color: white;
+    margin: 0 15px;
+    padding: 3px;
+    transition: .5s;
+    text-decoration: none;
+}
+
+.contenido-encabezado header nav ul li a:hover {
+    color: #0761bc;
+}
+
+/* boton navegacion responsive*/
+.nav-responsive {
+    background-color: #0761bc;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: none;
+}
+
+.misdatos {
+    background-color: #597496;
+    color: white;
+    padding: 50px 20px;
+}
+
+.misdatos h2 {
+    font-size: 48px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    padding: 20px 0;
+
+}
+
+.misdatos .contenido-seccion p {
+    font: 18px;
+    line-height: 22px;
+    margin-bottom: 20px;
+    font-family: 'raboto';
+}
+
+.misdatos .fila .col ul li strong {
+    display: inline-block;
+    color: black;
+    width: 130px;
+}
+
+
+
+
+
+
+
+/* SECCION PORTFOLIO */
+.portfolio {
+    background-color: white;
+    color: black;
+    padding: 50px 20px;
+}
+
+.portfolio .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+
+.portfolio .galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.portfolio .galeria .proyecto {
+    position: relative;
+    max-width: 340px;
+    height: fit-content;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.portfolio .galeria .proyecto img {
+    width: 100%;
+    display: block;
+}
+
+/* animacion imagenes */
+.portfolio .galeria .proyecto .overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: #0761bc;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: 1s;
+    font-size: 18px;
+    letter-spacing: 3px;
+    opacity: 0;
+}
+
+.portfolio .galeria .proyecto .overlay h3 {
+    margin-bottom: 20px;
+    transition: 1s;
+}
+
+.portfolio .galeria .proyecto .overlay:hover {
+    opacity: 1;
+}
+
+.portfolio .galeria .proyecto .overlay:hover h3 {
+    margin-bottom: 0px;
+}
+
+/* SECCION CONTACTO */
+.contacto {
+    background-color: black;
+    color: #fff;
+    padding: 50px 0;
+}
+
+.contacto .contenido-seccion {
+    max-width: 1100px;
+    margin: auto;
+}
+
+.contacto h2 {
+    font-size: 48px;
+    font-family: 'montserrat';
+    text-align: center;
+    padding: 20px 0;
+}
+
+.contacto .fila {
+    display: flex;
+}
+
+.contacto .col {
+    width: 50%;
+    padding: 10px;
+    position: relative;
+}
+
+.contacto .col input,
+.contacto .col textarea {
+    display: block;
+    width: 100%;
+    padding: 18px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: #252A2E;
+    color: #fff;
+    font-size: 18px;
+}
+
+.contacto button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 2px solid #fff;
+    width: fit-content;
+    display: block;
+    margin: 20px auto;
+    padding: 10px 22px;
+    font-size: 16px;
+    color: #fff;
+    position: relative;
+    z-index: 10;
+}
+
+.contacto button .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #0761bc;
+    z-index: -1;
+    transition: 1s;
+}
+
+.contacto button:hover .overlay {
+    width: 100%;
+}
+
+.contacto .col img {
+    width: 100%;
+}
+
+
+
+/* SECCION RESPONSIVE */
+@media screen and (max-width:980px) {
+    nav {
+        display: none;
+    }
+
+    .nav-responsive {
+        display: block;
+    }
+
+    nav.responsive {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 75px;
+        background-color: #252A2E;
+        width: 180px;
+    }
+
+    nav.responsive ul {
+        display: block !important;
+    }
+
+    nav.responsive ul li {
+        border-bottom: 1px solid #fff;
+        padding: 10px 0;
+    }
+}
+
+@media screen and (max-width:700px) {
+    .sobremi .fila {
+        display: block;
+    }
+
+    .sobremi .fila .col {
+        width: fit-content;
+    }
+
+    .portfolio .galeria {
+        display: block;
+        width: 100%;
+    }
+
+    .portfolio .galeria .proyecto {
+        max-width: 100%;
+    }
+
+    .portfolio .galeria .proyecto img {
+        width: 100%;
+    }
+
+    .contacto .fila {
+        display: block;
+    }
+
+    .contacto .fila .col {
+        width: 100%;
+    }
+}
+
+
+
+
+
+
+  
